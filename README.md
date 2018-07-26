@@ -8,16 +8,27 @@
 
 ## Requirements
 
-### Display posts
+### Display first post
 
-When the page loads, make a requests to the `/articles` endpoint and put each article on the page!
+When the page loads, make a GET request to the `/articles/1` endpoint and put the first article on the page!
+
+#### Events
+
+`DOMContentLoaded`
 
 ### Signup Form
 
 When a user tries to leave the page, display a signup form to get them to sign up to your site's newsletter!
 
--
+When a user submits the form, send a POST request to the `/subscriptions` route.
 
-- Fail email input validation the first time
+When a user clicks the `x` button, hide the modal.
 
-### Dead links
+#### Events
+
+`mouseout`
+`click`
+
+### Forever scroll
+
+When a user scrolls down to the bottom of the page, the application loads the next post and puts it on the page.
