@@ -10,7 +10,11 @@
   justify-content: center;
 }
 
-#modal.show {
+#modal.custom-class {
+  background-color: rgba(255, 0, 0, 0.75);
+}
+
+#modal.dog {
   display: flex;
 }
 
